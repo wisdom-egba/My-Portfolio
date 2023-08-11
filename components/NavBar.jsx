@@ -11,39 +11,54 @@ const NavBar = () => {
     <>
       <div className="relative dark:bg-gray-800 bg-sky-100 flex items-center justify-between">
         <div className=" flex items-center h-16 px-4">
-          <h1 className="text-white">Portfolio</h1>
+          <h1 className="text-white text-xl gradient-text font-semibold">
+            Portfolio
+          </h1>
         </div>
         <div className="hidden md:inline-block">
-          <ul className="flex text-white">
-            <li>
-              <a href=""></a>Home
+          <ul className="flex text-white gap-6 ">
+            <li className="nav gradient-text ">
+              <a className="tracking-[5px]" href="#">
+                Home
+              </a>
             </li>
-            <li>
-              <a href=""></a>About
+            <li className="nav gradient-text ">
+              <a className="tracking-[5px]" href="#">
+                About
+              </a>
             </li>
-            <li>
-              <a href=""></a>Skill
+            <li className=" nav gradient-text ">
+              <a className="tracking-[5px]" href="#">
+                Skill
+              </a>
             </li>
-            <li>
-              <a href=""></a>Projects
+            <li className=" nav gradient-text ">
+              <a className="tracking-[5px]" href="#">
+                Projects
+              </a>
             </li>
-            <li>
-              <a href=""></a>Contact
+            <li className=" nav gradient-text">
+              <a className="tracking-[5px]" href="#">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
 
         <div className="flex justify-center items-center gap-6 mr-4">
           <div className="text-white md:hidden flex">
-            <button onClick={() => setToggle(!toggle)}>
-              {toggle ? null : <AiOutlineMenu size={30} />}
+            <button
+              className="gradient-text"
+              onClick={() => setToggle(!toggle)}
+            >
+              {toggle ? null : <AiOutlineMenu className="" size={30} />}
             </button>
           </div>
           {colorTheme === "light" ? (
             <svg
               onClick={() => setTheme("light")}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-9 cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -59,7 +74,7 @@ const NavBar = () => {
             <svg
               onClick={() => setTheme("dark")}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-9 cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

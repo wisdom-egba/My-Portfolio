@@ -20,7 +20,7 @@ export default function Home() {
   })
   return (
     <>
-      <div className=" py-32 flex flex-col dark:bg-gray-900 justify-center items-center text-center overflow-hidden space-y-6">
+      <div className=" py-32 lg:py-[200px] flex flex-col dark:bg-gray-900 justify-center items-center text-center overflow-hidden space-y-6">
         {/* <motion.img
         initial={{
           scale: 3,
@@ -78,7 +78,7 @@ export default function Home() {
             delay: 0.5,
           }}
           viewport={{ once: true }}
-          className="text-sm md:text-lg uppercase tracking-[15px] pb-2 text-gray-500 gradient-text"
+          className="text-sm md:text-lg uppercase tracking-[15px] pb-2 text-gray-500 gradient-text font-semibold"
         >
           Software Engineer
         </motion.h2>
@@ -106,7 +106,7 @@ export default function Home() {
         </div>
       </div> */}
       </div>
-      <div className="dark:bg-gray-900 ">
+      <div className="dark:bg-gray-900 py-8">
         <About />
       </div>
     </>

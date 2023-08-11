@@ -2,14 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Sacramento&display=swap");
+
+@layer utilities {
+  .nav {
+    @apply relative tracking-wide text-black ml-4;
+  }
+  .nav::after {
+    @apply absolute content-[""] h-[3px] w-[0%] bg-sky-500 rounded-lg left-0 -bottom-[3px] duration-300;
+  }
+  .nav:hover::after {
+    @apply w-[100%];
+  }
+}
+
 body {
   @apply dark:bg-black dark:text-white;
 }
 html {
   scroll-behavior: smooth;
 }
+h1 {
+  font-family: "Sacramento", "sans-serif";
+}
 .gradient-text {
   background-image: linear-gradient(45deg, #007cf0, #00dfd8);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.gradient-color {
+  background-color: linear-gradient(45deg, #007cf0, #00dfd8);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;

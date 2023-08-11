@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai"
 const MobileList = ({ toggle, setToggle }) => {
   return (
     <div>
-      <ul className=" relative flex py-5 pt-12 flex-col h-screen gap-9 items-center">
+      <ul className=" relative flex py-5 pt-12 flex-col h-screen gap-9 items-center gradient-text">
         <button
           onClick={() => setToggle(!toggle)}
           className="absolute right-0 top-0 p-4 text-indigo-200"
