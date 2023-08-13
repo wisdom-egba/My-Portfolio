@@ -9,36 +9,36 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <div className="relative dark:bg-gray-800 bg-sky-100 flex items-center justify-between">
+      <div className=" w-full z-20 fixed dark:bg-gray-800 opacity-90 bg-sky-100 flex items-center justify-between">
         <div className=" flex items-center h-16 px-4">
           <h1 className="text-white text-xl gradient-text font-semibold">
-            Portfolio
+            Portfolio.
           </h1>
         </div>
         <div className="hidden md:inline-block">
           <ul className="flex text-white gap-6 ">
             <li className="nav gradient-text ">
-              <a className="tracking-[5px]" href="#">
+              <a className="tracking-[5px]" href="#home">
                 Home
               </a>
             </li>
             <li className="nav gradient-text ">
-              <a className="tracking-[5px]" href="#">
+              <a className="tracking-[5px]" href="#about">
                 About
               </a>
             </li>
             <li className=" nav gradient-text ">
-              <a className="tracking-[5px]" href="#">
+              <a className="tracking-[5px]" href="#skill">
                 Skill
               </a>
             </li>
             <li className=" nav gradient-text ">
-              <a className="tracking-[5px]" href="#">
+              <a className="tracking-[5px]" href="#projects">
                 Projects
               </a>
             </li>
             <li className=" nav gradient-text">
-              <a className="tracking-[5px]" href="#">
+              <a className="tracking-[5px]" href="#contact">
                 Contact
               </a>
             </li>

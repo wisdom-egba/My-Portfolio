@@ -1,11 +1,10 @@
 import { motion } from "framer-motion"
 import React from "react"
-import { Sacramento } from "@next/font/google"
 
 const About = () => {
   return (
     <div className="md:max-w-[80%] lg:max-w-[50%] mx-auto">
-      <hr className="h-2 w-[15%] mx-3 md:mx-0 bg-sky-400 my-8 rounded-md outline-none" />
+      <div className="h-1 md:h-2 w-[10%] md:mx-0 bg-sky-400 my-8 rounded-md outline-none" />
       <motion.h1
         initial={{
           x: -50,

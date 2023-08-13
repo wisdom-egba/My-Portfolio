@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Lugrasimo&family=Sacramento&display=swap");
 
 @layer utilities {
   .nav {
@@ -23,7 +23,11 @@ html {
   scroll-behavior: smooth;
 }
 h1 {
-  font-family: "Sacramento", "sans-serif";
+  font-family: "Sacramento", cursive;
+}
+li,
+p {
+  font-family: "Lugrasimo", cursive;
 }
 .gradient-text {
   background-image: linear-gradient(45deg, #007cf0, #00dfd8);
