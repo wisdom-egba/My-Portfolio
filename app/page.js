@@ -5,6 +5,7 @@ import wisdom from "./assets/RBWC-26.jpg"
 
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import About from "@/components/About"
+import Project from "@/components/Project"
 
 export default function Home() {
   const [text] = useTypewriter({
@@ -108,6 +109,9 @@ export default function Home() {
       </div>
       <div className="dark:bg-gray-900 py-8">
         <About />
+      </div>
+      <div className="dark:bg-gray-900">
+        <Project />
       </div>
     </>
   )
