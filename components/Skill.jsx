@@ -1,9 +1,7 @@
 import { motion } from "framer-motion"
 import React from "react"
-import ProjectCard from "./ProjectCard"
-import { projects } from "@/app/(constants)/constant"
 
-const Project = () => {
+const Skill = () => {
   return (
     <div className="md:max-w-[80%] lg:max-w-[50%] mx-auto">
       <div className="flex justify-end mx-3">
@@ -25,15 +23,12 @@ const Project = () => {
           duration: 2,
         }}
         viewport={{ once: true }}
-        className="gradient-text text-5xl font-bold mx-3 py-2 text-end"
+        className="gradient-text text-end text-5xl font-bold mx-3"
       >
-        Projects
+        Skill
       </motion.h1>
-      <div className="">
-        <ProjectCard info={projects} />
-      </div>
     </div>
   )
 }
 
-export default Project
+export default Skill
